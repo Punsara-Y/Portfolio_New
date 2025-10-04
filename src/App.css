@@ -22,8 +22,9 @@ body {
   font-size: 1.2rem;
   padding: 30px;
   backdrop-filter: blur(12px);
-  max-width: 1000px;
+  max-width: 1100px;
   margin: 0 auto;
+  margin-top: 50px;
 }
 
 .glow-text {
@@ -34,10 +35,10 @@ body {
 }
 
 .mypic {
-  background-image: url(./Pictures/Me.png);
+  background-image: url(./Pictures/my.jpg);
   background-size: cover;
   background-position: center;
-  height: 300px;
+  height: 350px;
   width: 300px;
   border-radius: 50%;
   box-shadow: 0 0 30px rgba(0, 255, 255, 0.6);
@@ -45,34 +46,9 @@ body {
   margin: 0 auto;
 }
 
-.project-btn-group {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 15px;
-  justify-content: center;
-  padding: 20px;
-}
-
-.mybtn {
-  transition: all 0.4s ease-in-out;
-  border-radius: 12px;
-  font-weight: bold;
-  padding: 10px 20px;
-  font-size: 1rem;
-  background: linear-gradient(to right, #243b55, #141e30);
-  border: none;
-  color: white;
-  width: 250px;
-  text-align: center;
-  text-decoration: none;
-}
-.mybtn:hover {
-  background: linear-gradient(to right, #00c6ff, #0072ff);
-  transform: scale(1.05);
-}
-
 .cvbtn {
-  background-color: #00bcd4;
+  background-color: #1035af;
+  color: white;
   border-radius: 10px;
   padding: 1rem 2rem;
   font-size: 1.1rem;
@@ -86,7 +62,7 @@ body {
 }
 
 .cvbtn:hover {
-  background-color: #0097a7;
+  background-color: #0caf79;
   transform: translateY(7px);
 }
 
@@ -130,10 +106,9 @@ body {
 }
 
 .navstyle {
-  border-radius: 20px;
-  font-family: Georgia, "Times New Roman", Times, serif;
+  font-family:monospace;
   text-align: center;
-  font-size: 25px;
+  font-size: 21px;
   color: rgb(255, 255, 255);
   text-shadow: 0 0 10px rgb(35, 165, 85), 0 0 20px rgb(162, 56, 204);
 }
@@ -217,6 +192,56 @@ body {
   text-decoration: underline;
 }
 
+/* === service Section === */
+
+.service-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
+  gap: 50px;
+  margin-top: 60px;
+  padding: 0 40px;
+}
+.service-card {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(0, 0, 0);
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 8px 30px rgba(172, 177, 172, 0.733);
+  backdrop-filter: blur(18px);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  height: 1200px;
+}
+
+.service-card:hover {
+  transform: scale(1.03);
+  box-shadow: 0 10px 40px rgba(14, 201, 139, 0.877);
+}
+
+.service-image {
+  width: 100%;
+  height: 100%;
+  object-fit:fill;
+}
+
+.service-content {
+  padding: 25px;
+  flex: 1;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-size: 18px;
+  line-height: 1.5;
+}
+.service-contact{
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+}
+
+
+
 /* === Responsive Design === */
 @media (max-width: 1024px) {
   .mypic {
@@ -233,12 +258,13 @@ body {
     padding: 20px;
   }
   .mypic {
-    height: 200px;
+    height: 235px;
     width: 200px;
   }
   .glow-text {
     font-size: 1.5rem;
   }
+
   .mybtn, .cvbtn {
     width: 100%;
     font-size: 1rem;
@@ -247,7 +273,15 @@ body {
     grid-template-columns: 1fr;
     padding: 0 20px;
   }
+  .service-grid {
+    grid-template-columns: 1fr;
+    padding: 0 20px;
+  }
   .project-card {
+    flex-direction: column;
+    height: auto;
+  }
+  .service-card {
     flex-direction: column;
     height: auto;
   }
@@ -255,7 +289,15 @@ body {
     width: 100%;
     height: 200px;
   }
+  .service-image {
+    width: 100%;
+    height: 200px;
+  }
   .project-content {
+    padding: 20px;
+    font-size: 16px;
+  }
+  .service-content {
     padding: 20px;
     font-size: 16px;
   }

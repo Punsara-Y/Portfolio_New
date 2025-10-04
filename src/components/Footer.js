@@ -3,10 +3,23 @@ import { FaGithub, FaLinkedin, FaEnvelope, FaPhone } from "react-icons/fa";
 import Swal from "sweetalert2";
 
 export const Footer = () => {
+  
   const showPhoneNumber = () => {
     Swal.fire({
-      title: "My Number  📞",
+      title: "My Number 📞",
       text: "+94 70 4673 604",
+      icon: "info",
+      background: "#1e1e2f",
+      color: "#ffffff",
+      confirmButtonText: "Close",
+      confirmButtonColor: "#3085d6",
+    });
+  };
+
+    const showmail = () => {
+    Swal.fire({
+      title: "My Mail 📩",
+      text: "yapapunsara408@gmail.com",
       icon: "info",
       background: "#1e1e2f",
       color: "#ffffff",
@@ -36,14 +49,17 @@ export const Footer = () => {
           >
             <FaLinkedin />
           </a>
-          <a
-            href="https://mail.google.com/mail/u/2/?ogbl#inbox?compose=CllgCJZdBHfvSphRHmQPqxXBPdfKBXbRrSKNqWgFjsrQFJhPzzpDFPwHcZHqrXMtGRttfZChJdV"
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="Send Email"
+
+           <div
+            onClick={showmail}
+            style={{
+              cursor: "pointer",
+              fontSize: "28px",
+              color: "#ccc",
+            }}
           >
-            <FaEnvelope size={30} style={{ cursor: "pointer" }} />
-          </a>
+            <FaEnvelope />
+          </div>
 
           <div
             onClick={showPhoneNumber}
