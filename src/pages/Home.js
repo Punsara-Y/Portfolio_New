@@ -11,11 +11,20 @@ import frontendtech from "../Pictures/frontendtech.png"
 import backendtech from "../Pictures/backengtech.png";
 import tmsfrontend from "../Pictures/tmsf.png";
 import tmsbackend from "../Pictures/bb.jpg";
+import banana from "../Pictures/banana.png"
+import pricetracker from "../Pictures/localprice.png";
 
 import Swal from "sweetalert2";
 import { FaEnvelope, FaPhone } from "react-icons/fa";
+import { Link,useNavigate } from "react-router-dom";
+import Navbar from "../components/Navbar";
+import Footer from "../components/Footer";
+
+
 
 export default function Home() {
+
+  const navigate = useNavigate();
 
     const showPhoneNumber = () => {
       Swal.fire({
@@ -42,6 +51,11 @@ export default function Home() {
     };
 
   return (
+
+    <div>
+
+      <Navbar/>
+      
 
     <div className="homebg">
       <div className="mypic-container mt-5 fade-in">
@@ -80,6 +94,10 @@ export default function Home() {
     <div className="project-content">
       <h4>Trip App Website (Frontend)</h4>
       <p>A React frontend for a travel booking system with user login and trip management features.</p>
+      <Link className="github-link" to="/tripappfrontend">
+      Rad More →
+      </Link>
+
       <a
         href="https://github.com/Punsara-Y/Trip-App-Frontend.git"
         target="_blank"
@@ -100,6 +118,9 @@ export default function Home() {
     <div className="project-content">
       <h4>Trip App Website (Backend)</h4>
       <p>Spring Boot backend for managing users, bookings, and API endpoints for the Trip App.</p>
+      <Link className="github-link" to="/tripappbackend">
+      Rad More →
+      </Link>
       <a
         href="https://github.com/Punsara-Y/Trip-App-Backend.git"
         target="_blank"
@@ -121,8 +142,13 @@ export default function Home() {
     />
     <div className="project-content">
       <h4>Task Flow Pro - Task Managemenet System With AI Chatbot (Frontend)</h4>
-      <p>A React frontend for task management system with user login register and Task management features with AI chatbot.</p>
+      <p>A React frontend for task management system with  with AI chatbot.</p>
+      
+      <Link className="github-link" to="#######">
+      Rad More →
+      </Link>
       <a
+
         href="https://github.com/Punsara-Y/Task-manger-Frontend.git"
         target="_blank"
         rel="noopener noreferrer"
@@ -142,6 +168,11 @@ export default function Home() {
     <div className="project-content">
       <h4>Task Flow Pro - Task Managemenet System With AI Chatbot (Backend)</h4>
       <p>Node.js backend for managing tasks with AI chatbot for the Task Managemenet system.</p>
+
+      <Link className="github-link" to="#######">
+      Rad More →
+      </Link>
+
       <a
         href="https://github.com/Punsara-Y/Task-manger-Backend.git"
         target="_blank"
@@ -163,6 +194,11 @@ export default function Home() {
     <div className="project-content">
       <h4>Android Calculator</h4>
       <p>Simple calculator for android developed using Java.</p>
+
+      <Link className="github-link" to="#######">
+      Rad More →
+      </Link>
+
       <a
         href="https://github.com/Punsara-Y/calculator-for-android.git"
         target="_blank"
@@ -184,6 +220,11 @@ export default function Home() {
     <div className="project-content">
       <h4>Portfolio Website</h4>
       <p>Personal portfolio website created uring React.js and CSS .</p>
+
+      <Link className="github-link" to="#######">
+      Rad More →
+      </Link>
+
       <a
         href="https://github.com/Punsara-Y/Portfolio_New.git"
         target="_blank"
@@ -206,6 +247,11 @@ export default function Home() {
     <div className="project-content">
       <h4>Student Management System</h4>
       <p>Complete Student Management System developed using Java.</p>
+
+      <Link className="github-link" to="#######">
+      Rad More →
+      </Link>
+
       <a
         href="https://github.com/Punsara-Y/CODSOFT-Task_03.git"
         target="_blank"
@@ -228,6 +274,11 @@ export default function Home() {
     <div className="project-content">
       <h4>Student Grade calculator</h4>
       <p>Student grade calculator developed using Java.</p>
+
+      <Link className="github-link" to="#######">
+      Rad More →
+      </Link>
+
       <a
         href="https://github.com/Punsara-Y/CODSOFT-Task_02.git"
         target="_blank"
@@ -250,8 +301,40 @@ export default function Home() {
     <div className="project-content">
       <h4>Number Guessing Game</h4>
       <p>Simple number guessing game developed by Java.</p>
+
+      <Link className="github-link" to="#######">
+      Rad More →
+      </Link>
+
       <a
         href="https://github.com/Punsara-Y/CODSOFT-Task_01.git"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="github-link"
+      >
+        View on GitHub →
+      </a>
+    </div>
+  </div>
+
+  {/* banana game Section */}
+
+    <div className="project-card">
+    <img
+      src={banana}
+      alt="Math Game"
+      className="project-image"
+    />
+    <div className="project-content">
+      <h4>Math Solver Game</h4>
+      <p>Advanced Math game developed by Java  and banana API.</p>
+
+      <Link className="github-link" to="#######">
+      Rad More →
+      </Link>
+
+      <a
+        href="https://github.com/Punsara-Y/Math_game.git"
         target="_blank"
         rel="noopener noreferrer"
         className="github-link"
@@ -271,7 +354,12 @@ export default function Home() {
     />
     <div className="project-content">
       <h4>Controlit</h4>
-      <p>A windows application developed using Python and computer vision technologies like Mediapipe,OpenCV etc. ,for controlling PDF readers , Presentation softwares and Media players using hand gestures.</p>
+      <p>A windows application developed using Python and computer vision technologies for controlling sevaral softwares using hand gestures.</p>
+      
+      <Link className="github-link" to="#######">
+      Rad More →
+      </Link>
+
       <a
         href="https://github.com/Punsara-Y/ControlIt.git"
         target="_blank"
@@ -294,8 +382,39 @@ export default function Home() {
     <div className="project-content">
       <h4>Chatterly</h4>
       <p>Simple chat web application for gloable room chats which is created by react.js and the used Mongodb as database.</p>
+      <Link className="github-link" to="#######">
+      Rad More →
+      </Link>
+
       <a
         href="https://github.com/Punsara-Y/Chat-App.git"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="github-link"
+      >
+        View on GitHub →
+      </a>
+    </div>
+  </div>
+
+
+  {/* price tracker Section */}
+
+      <div className="project-card">
+    <img
+      src={pricetracker}
+      alt="Chatterly"
+      className="project-image"
+    />
+    <div className="project-content">
+      <h4>Local Goods Price Tracker</h4>
+      <p>Android application for tracking local good's prices which is created by react.js , Node.js and the used Mongodb as database.</p>
+      <Link className="github-link" to="#######">
+      Rad More →
+      </Link>
+
+      <a
+        href="https://github.com/Punsara-Y/local-goods-prices-tracking-app.git"
         target="_blank"
         rel="noopener noreferrer"
         className="github-link"
@@ -410,7 +529,7 @@ export default function Home() {
 
 
       <div className="cv fade-in-up">
-        <h2 className="glow-text">My CVs</h2>
+        <h2 className="glow-text pt-5">My CVs</h2>
         
         <a
           href="https://drive.google.com/file/d/1E6gGVe9EgSoB3dQ8hkhOO3BQ9uKkC6DN/view?usp=sharing"
@@ -435,5 +554,8 @@ export default function Home() {
       <br />
       <br />
     </div>
+    <Footer/>
+     </div>
   );
 }
+

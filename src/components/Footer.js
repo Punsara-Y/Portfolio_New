@@ -2,7 +2,7 @@ import React from "react";
 import { FaGithub, FaLinkedin, FaEnvelope, FaPhone } from "react-icons/fa";
 import Swal from "sweetalert2";
 
-export const Footer = () => {
+const Footer = () => {
   
   const showPhoneNumber = () => {
     Swal.fire({
@@ -76,3 +76,4 @@ export const Footer = () => {
     </footer>
   );
 };
+export default Footer;

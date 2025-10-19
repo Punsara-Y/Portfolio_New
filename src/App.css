@@ -17,7 +17,7 @@ body {
 }
 
 .card {
-  background: rgba(0, 255, 255, 0.1);
+  background: rgba(12, 201, 201, 0.1);
   border-radius: 25px;
   font-size: 1.2rem;
   padding: 30px;
@@ -25,12 +25,31 @@ body {
   max-width: 1100px;
   margin: 0 auto;
   margin-top: 50px;
+  color: #fff;
+}
+
+.card2 {
+  background: rgba(0, 255, 255, 0.1);
+  border-radius: 25px;
+  font-size: 1.3rem;
+  padding: 30px;
+  backdrop-filter: blur(12px);
+  max-width: 1300px;
+  margin: 0 auto;
+  margin-top: 50px;
+  text-align: justify;
 }
 
 .glow-text {
   color: #0ff;
   text-shadow: 0 0 10px #0ff, 0 0 20px #0ff;
   font-size: 2rem;
+  text-align: center;
+}
+
+.glow-text2 {
+  color: rgb(224, 224, 224);
+  font-size: 2.8rem;
   text-align: center;
 }
 
@@ -192,6 +211,27 @@ body {
   text-decoration: underline;
 }
 
+.homebtn{
+  margin-top: 10px;
+  color: #19c736;
+  font-weight: bold;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 28px;
+  text-decoration: none;
+
+}
+
+.homebtn:hover{
+  color: #00bcd4;
+}
+
+
+
+
+
 /* === service Section === */
 
 .service-grid {
@@ -264,6 +304,9 @@ body {
   .glow-text {
     font-size: 1.5rem;
   }
+  .glow-text2{
+    font-size: 2.3rem;
+  }
 
   .mybtn, .cvbtn {
     width: 100%;
@@ -304,10 +347,17 @@ body {
   .github-link {
     font-size: 14px;
   }
+  .homebtn{
+    font-size: 18px;
+  }
 }
 
 @media (max-width: 480px) {
   .card {
+    padding: 20px;
+    font-size: 1rem;
+  }
+  .card2 {
     padding: 20px;
     font-size: 1rem;
   }
