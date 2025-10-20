@@ -1,14 +1,9 @@
-import { Link,useNavigate } from "react-router-dom";
-import Navbar from "../components/Navbar";
+import { Link } from "react-router-dom";
 import Footer from "../components/Footer";
-import ImageSlider from "../components/ImageSliders/TripAppImageSlider";
 
 
 
 export default function Tripbackendinfo() {
-
-    const navigate = useNavigate();
-
 
   return (
 
