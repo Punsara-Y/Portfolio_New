@@ -16,7 +16,7 @@ import pricetracker from "../Pictures/localprice.png";
 
 import Swal from "sweetalert2";
 import { FaEnvelope, FaPhone } from "react-icons/fa";
-import { Link,useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 
@@ -24,7 +24,6 @@ import Footer from "../components/Footer";
 
 export default function Home() {
 
-  const navigate = useNavigate();
 
     const showPhoneNumber = () => {
       Swal.fire({
