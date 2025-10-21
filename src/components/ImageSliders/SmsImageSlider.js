@@ -1,25 +1,23 @@
+
 import { useState } from "react";
 import "../ImageSliders/CSS/ImageSlider.css";
 
-import trip1 from "../ImageSliders/TripappImages/1.png";
-import trip2 from "../ImageSliders/TripappImages/2.png";
-import trip3 from "../ImageSliders/TripappImages/3.png";
-import trip4 from "../ImageSliders/TripappImages/4.png";
-import trip5 from "../ImageSliders/TripappImages/5.png";
-import trip6 from "../ImageSliders/TripappImages/6.png";
-import trip7 from "../ImageSliders/TripappImages/7.png";
-import trip8 from "../ImageSliders/TripappImages/8.png";
-import trip9 from "../ImageSliders/TripappImages/9.png";
-import trip10 from "../ImageSliders/TripappImages/10.png";
-import trip11 from "../ImageSliders/TripappImages/11.png";
+import sms1 from "../ImageSliders/smsimages/1.png";
+import sms2 from "../ImageSliders/smsimages/2.png";
+import sms3 from "../ImageSliders/smsimages/3.png";
+import sms4 from "../ImageSliders/smsimages/4.png";
+import sms5 from "../ImageSliders/smsimages/5.png";
+import sms6 from "../ImageSliders/smsimages/6.png";
+import sms7 from "../ImageSliders/smsimages/7.png";
+import sms8 from "../ImageSliders/smsimages/8.png";
 
 
 const images = [
-    trip1,trip2,trip3,trip4,trip5,trip6,trip7,trip8,trip9,trip10,trip11
+    sms1,sms2,sms3,sms4,sms5,sms6,sms7,sms8
  
 ];
 
-const TripAppImageSlider = () => {
+const SmsImageSlider = () => {
   const [index, setIndex] = useState(0);
 
   const nextSlide = () => {
@@ -61,4 +59,4 @@ const TripAppImageSlider = () => {
   );
 };
 
-export default TripAppImageSlider;
+export default SmsImageSlider;

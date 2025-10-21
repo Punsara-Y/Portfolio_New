@@ -1,25 +1,13 @@
 import { useState } from "react";
 import "../ImageSliders/CSS/ImageSlider.css";
 
-import trip1 from "../ImageSliders/TripappImages/1.png";
-import trip2 from "../ImageSliders/TripappImages/2.png";
-import trip3 from "../ImageSliders/TripappImages/3.png";
-import trip4 from "../ImageSliders/TripappImages/4.png";
-import trip5 from "../ImageSliders/TripappImages/5.png";
-import trip6 from "../ImageSliders/TripappImages/6.png";
-import trip7 from "../ImageSliders/TripappImages/7.png";
-import trip8 from "../ImageSliders/TripappImages/8.png";
-import trip9 from "../ImageSliders/TripappImages/9.png";
-import trip10 from "../ImageSliders/TripappImages/10.png";
-import trip11 from "../ImageSliders/TripappImages/11.png";
-
+import cal1 from "../ImageSliders/calimages/1.jpg";
 
 const images = [
-    trip1,trip2,trip3,trip4,trip5,trip6,trip7,trip8,trip9,trip10,trip11
- 
+    cal1
 ];
 
-const TripAppImageSlider = () => {
+const CalImageSlider = () => {
   const [index, setIndex] = useState(0);
 
   const nextSlide = () => {
@@ -61,4 +49,4 @@ const TripAppImageSlider = () => {
   );
 };
 
-export default TripAppImageSlider;
+export default CalImageSlider;

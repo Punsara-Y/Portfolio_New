@@ -143,7 +143,7 @@ export default function Home() {
       <h4>Task Flow Pro - Task Managemenet System With AI Chatbot (Frontend)</h4>
       <p>A React frontend for task management system with  with AI chatbot.</p>
       
-      <Link className="github-link" to="#######">
+      <Link className="github-link" to="/tmsfrontend">
       Rad More →
       </Link>
       <a
@@ -168,7 +168,7 @@ export default function Home() {
       <h4>Task Flow Pro - Task Managemenet System With AI Chatbot (Backend)</h4>
       <p>Node.js backend for managing tasks with AI chatbot for the Task Managemenet system.</p>
 
-      <Link className="github-link" to="#######">
+      <Link className="github-link" to="/tmsbackend">
       Rad More →
       </Link>
 
@@ -194,7 +194,7 @@ export default function Home() {
       <h4>Android Calculator</h4>
       <p>Simple calculator for android developed using Java.</p>
 
-      <Link className="github-link" to="#######">
+      <Link className="github-link" to="/calinfo">
       Rad More →
       </Link>
 
@@ -220,7 +220,7 @@ export default function Home() {
       <h4>Portfolio Website</h4>
       <p>Personal portfolio website created uring React.js and CSS .</p>
 
-      <Link className="github-link" to="#######">
+      <Link className="github-link" to="/portfolioinfo">
       Rad More →
       </Link>
 
@@ -247,7 +247,7 @@ export default function Home() {
       <h4>Student Management System</h4>
       <p>Complete Student Management System developed using Java.</p>
 
-      <Link className="github-link" to="#######">
+      <Link className="github-link" to="/Smsinfo">
       Rad More →
       </Link>
 
@@ -274,7 +274,7 @@ export default function Home() {
       <h4>Student Grade calculator</h4>
       <p>Student grade calculator developed using Java.</p>
 
-      <Link className="github-link" to="#######">
+      <Link className="github-link" to="/Sgcinfo">
       Rad More →
       </Link>
 
@@ -301,7 +301,7 @@ export default function Home() {
       <h4>Number Guessing Game</h4>
       <p>Simple number guessing game developed by Java.</p>
 
-      <Link className="github-link" to="#######">
+      <Link className="github-link" to="/Numbergameinfo">
       Rad More →
       </Link>
 
@@ -328,7 +328,7 @@ export default function Home() {
       <h4>Math Solver Game</h4>
       <p>Advanced Math game developed by Java  and banana API.</p>
 
-      <Link className="github-link" to="#######">
+      <Link className="github-link" to="/mathsolverinfo">
       Rad More →
       </Link>
 
@@ -355,7 +355,7 @@ export default function Home() {
       <h4>Controlit</h4>
       <p>A windows application developed using Python and computer vision technologies for controlling sevaral softwares using hand gestures.</p>
       
-      <Link className="github-link" to="#######">
+      <Link className="github-link" to="/controlitinfo">
       Rad More →
       </Link>
 
@@ -381,7 +381,7 @@ export default function Home() {
     <div className="project-content">
       <h4>Chatterly</h4>
       <p>Simple chat web application for gloable room chats which is created by react.js and the used Mongodb as database.</p>
-      <Link className="github-link" to="#######">
+      <Link className="github-link" to="/chatteryinfo">
       Rad More →
       </Link>
 
@@ -408,7 +408,7 @@ export default function Home() {
     <div className="project-content">
       <h4>Local Goods Price Tracker</h4>
       <p>Android application for tracking local good's prices which is created by react.js , Node.js and the used Mongodb as database.</p>
-      <Link className="github-link" to="#######">
+      <Link className="github-link" to="/lpsinfo">
       Rad More →
       </Link>
 

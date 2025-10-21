@@ -1,25 +1,20 @@
 import { useState } from "react";
 import "../ImageSliders/CSS/ImageSlider.css";
 
-import trip1 from "../ImageSliders/TripappImages/1.png";
-import trip2 from "../ImageSliders/TripappImages/2.png";
-import trip3 from "../ImageSliders/TripappImages/3.png";
-import trip4 from "../ImageSliders/TripappImages/4.png";
-import trip5 from "../ImageSliders/TripappImages/5.png";
-import trip6 from "../ImageSliders/TripappImages/6.png";
-import trip7 from "../ImageSliders/TripappImages/7.png";
-import trip8 from "../ImageSliders/TripappImages/8.png";
-import trip9 from "../ImageSliders/TripappImages/9.png";
-import trip10 from "../ImageSliders/TripappImages/10.png";
-import trip11 from "../ImageSliders/TripappImages/11.png";
+import mathsolver1 from "../ImageSliders/mathsolverimages/1.png";
+import mathsolver2 from "../ImageSliders/mathsolverimages/2.png";
+import mathsolver3 from "../ImageSliders/mathsolverimages/3.png";
+import mathsolver4 from "../ImageSliders/mathsolverimages/4.png";
+import mathsolver5 from "../ImageSliders/mathsolverimages/5.png";
+
 
 
 const images = [
-    trip1,trip2,trip3,trip4,trip5,trip6,trip7,trip8,trip9,trip10,trip11
+    mathsolver1,mathsolver2,mathsolver3,mathsolver4,mathsolver5
  
 ];
 
-const TripAppImageSlider = () => {
+const MathsolverImageSlider = () => {
   const [index, setIndex] = useState(0);
 
   const nextSlide = () => {
@@ -61,4 +56,4 @@ const TripAppImageSlider = () => {
   );
 };
 
-export default TripAppImageSlider;
+export default MathsolverImageSlider;

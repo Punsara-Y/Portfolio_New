@@ -1,10 +1,10 @@
 import { Link } from "react-router-dom";
 import Footer from "../components/Footer";
-import ImageSlider from "../components/ImageSliders/PortfolioImageSlider";
+import ImageSlider from "../components/ImageSliders/ChatteryImageSlider";
 
 
 
-export default function Portfolioinfo() {
+export default function Chatteryinfo() {
 
   return (
 
@@ -15,7 +15,7 @@ export default function Portfolioinfo() {
       </div>
 
       <h1 className="glow-text2">
-        💼 DP Yapa Portfolio – Personal Website
+        💬 Chatterly – Real-Time Chat Application
       </h1>
 
 
@@ -23,7 +23,7 @@ export default function Portfolioinfo() {
 
       <div className="card2 fade-in-up mt-5">
         <p>
-            A modern personal portfolio website built to highlight professional skills, achievements, and projects. It features smooth animations, a responsive layout, and API-based contact handling for real-time communication.
+            Chatterly is a full-stack chat application that supports real-time messaging among multiple users using WebSockets. It features group chats with message persistence via MongoDB.
         </p>
       </div>
 
@@ -31,9 +31,10 @@ export default function Portfolioinfo() {
      
       <div className="card2 fade-in-up mt-5">
         <strong>
-        <p>✔️ Dynamic content rendering through APIs.</p>
-        <p>✔️ Animated UI and navigation transitions.</p>
-        <p>✔️ Fully responsive design across all devices.</p>
+        <p>✔️ Live chat with instant message delivery.</p>
+        <p>✔️ User Register , Login and Authentication system.</p>    
+        <p>✔️ Persistent message storage.</p>
+        <p>✔️ Modern minimalistic UI.</p>
         </strong>
       </div>
 
@@ -42,9 +43,11 @@ export default function Portfolioinfo() {
         <div className="card2 fade-in-up mt-5">
           <strong>
             <p>🔶 React.js</p>
-            <p>🔶 CSS3</p> 
-            <p>🔶 REST APIs</p>
-            
+            <p>🔶 CSS3</p>
+            <p>🔶 Node.js</p>
+            <p>🔶 MongoDB</p>
+            <p>🔶 WebSockets</p>
+            <p>🔶 REST APIs</p> 
           </strong>
         </div>
 
