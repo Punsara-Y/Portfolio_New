@@ -8,7 +8,7 @@ export default function Calinfo() {
 
   return (
 
-    <div>
+    <div className="homebg">
 
       <div className="p-3">
         <Link className="homebtn" to="/">🔙</Link>
